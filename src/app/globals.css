@@ -1,0 +1,352 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --text: #272727; /* Define your default text color */
+  --light-blue: #E9F3F4
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/fonts/icomoon.eot?nemwj2');
+  src:  url('/fonts/icomoon.eot?nemwj2#iefix') format('embedded-opentype'),
+        url('/fonts/icomoon.ttf?nemwj2') format('truetype'),
+        url('/fonts/icomoon.woff?nemwj2') format('woff'),
+        url('/fonts/icomoon.svg?nemwj2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clear:before {
+  content: "\e900";
+}
+.icon-map:before {
+  content: "\e901";
+}
+.icon-account-1:before {
+  content: "\e902";
+}
+.icon-account-2:before {
+  content: "\e903";
+}
+.icon-analytics:before {
+  content: "\e904";
+}
+.icon-approve:before {
+  content: "\e905";
+}
+.icon-areas:before {
+  content: "\e906";
+}
+.icon-arrow-2:before {
+  content: "\e908";
+}
+.icon-arrow-3:before {
+  content: "\e909";
+}
+.icon-arrow-5:before {
+  content: "\e90b";
+}
+.icon-arrow:before {
+  content: "\e90c";
+}
+.icon-arrows:before {
+  content: "\e90d";
+}
+.icon-bookmark:before {
+  content: "\e90e";
+}
+.icon-calendar:before {
+  content: "\e90f";
+}
+.icon-canceled:before {
+  content: "\e911";
+}
+.icon-chart:before {
+  content: "\e912";
+}
+.icon-check:before {
+  content: "\e913";
+}
+.icon-collapse:before {
+  content: "\e916";
+}
+.icon-dashboard:before {
+  content: "\e917";
+}
+.icon-download:before {
+  content: "\e918";
+}
+.icon-drag:before {
+  content: "\e919";
+}
+.icon-edit:before {
+  content: "\e91a";
+}
+.icon-expand:before {
+  content: "\e91b";
+}
+.icon-expired:before {
+  content: "\e91c";
+}
+.icon-eye-closed:before {
+  content: "\e91d";
+}
+.icon-eye:before {
+  content: "\e91e";
+}
+.icon-filter-for-saved-areas:before {
+  content: "\e91f";
+}
+.icon-fire:before {
+  content: "\e920";
+}
+.icon-group:before {
+  content: "\e921";
+}
+.icon-hamburger-menu:before {
+  content: "\e922";
+}
+.icon-help-center:before {
+  content: "\e924";
+}
+.icon-info:before {
+  content: "\e926";
+}
+.icon-layers:before {
+  content: "\e927";
+}
+.icon-link:before {
+  content: "\e928";
+}
+.icon-location-1:before {
+  content: "\e929";
+}
+.icon-location:before {
+  content: "\e92a";
+}
+.icon-log-out:before {
+  content: "\e92b";
+}
+.icon-minus:before {
+  content: "\e92d";
+}
+.icon-password:before {
+  content: "\e92f";
+}
+.icon-plus-1:before {
+  content: "\e930";
+}
+.icon-plus:before {
+  content: "\e931";
+}
+.icon-portals:before {
+  content: "\e933";
+}
+.icon-processed:before {
+  content: "\e934";
+}
+.icon-redo:before {
+  content: "\e936";
+}
+.icon-remove-icon:before {
+  content: "\e937";
+}
+.icon-remove:before {
+  content: "\e938";
+}
+.icon-save:before {
+  content: "\e939";
+}
+.icon-settings:before {
+  content: "\e93c";
+}
+.icon-small-arrow-1:before {
+  content: "\e93d";
+}
+.icon-small-arrow:before {
+  content: "\e93e";
+}
+.icon-table:before {
+  content: "\e941";
+}
+.icon-undo:before {
+  content: "\e942";
+}
+.icon-upload-file:before {
+  content: "\e943";
+}
+
+/* Utility Classes for Font Weight */
+.font-regular {
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* Styles for Headings */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2em; /* Adjust size as needed */
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.75em;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* Specific Style for "My Areas" */
+.extended-title {
+  color: var(--text, #272727);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.sidebar {
+  width: 250px; /* Adjust the width as needed */
+  flex-shrink: 0;
+}
+
+.mapContainer {
+  flex-grow: 1;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.checkbox-container:hover .bg-unchecked {
+  background: var(--light-blue, #E9F3F4); /* Light blue background for unchecked hover state */
+}
+
+.checkbox-container:hover .bg-checked-box {
+  background-image: url('/box-hover.svg'); /* Path to box-hover.svg */
+}
+
+.bg-checked-box {
+  background-image: url('/box.svg'); /* Path to box.svg */
+  background-size: cover;
+}
+
+.bg-unchecked {
+  transition: background 0.15s ease-in-out; /* Transition for unchecked background */
+}
+
+/* Transition for background changes */
+.checkbox-inner > div {
+  transition: opacity 0.15s ease-in-out, background 0.15s ease-in-out;
+}
+
+/* Ensure this is globally accessible or defined in an appropriate place */
+.transition {
+  transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.area-item {
+  margin-bottom: 6px;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.area-item:not(.checked):hover {
+  box-shadow: 1.5px 1.5px 3px 0px rgba(174, 174, 192, 0.40), -1px -1px 3px 0px #FFF;
+  background-color: #f9fafb;
+}
+
+/* Hide the boxes initially */
+.hover-target {
+  display: none;
+}
+
+/* Show the boxes when area-item is hovered */
+.area-item:hover .hover-target {
+  display: flex;
+}
+
+.hover-target div {
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
